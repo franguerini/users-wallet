@@ -1,9 +1,9 @@
 ### User Wallet Python Exercise
 
 ##### Requirements
-virtualenv 
-python3 or higher
-mysql
+- virtualenv 
+- python 3.X
+- mysql
 
 ##### Instalation
 - Set up virtual env
