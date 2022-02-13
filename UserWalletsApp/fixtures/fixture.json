@@ -1,0 +1,188 @@
+[
+    {
+      "model": "UserWalletsApp.Currency",
+      "pk": 1,
+      "fields": {
+        "name": "Argentine Peso",
+        "symbol": "ARS",
+        "decimals": 2,
+        "createByDefault": true
+      }
+    },
+    {
+      "model": "UserWalletsApp.Currency",
+      "pk": 2,
+      "fields": {
+        "name": "United state dollar",
+        "symbol": "USD",
+        "decimals": 2,
+        "createByDefault": true
+      }
+    },
+    {
+      "model": "UserWalletsApp.Currency",
+      "pk": 3,
+      "fields": {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "decimals": 8,
+        "createByDefault": true
+      }
+    },
+    {
+        "model": "UserWalletsApp.User",
+        "pk": 1,
+        "fields": {
+            "firstName": "Francisco",
+            "lastName": "Guerini",
+            "alias": "frang",
+            "password": "123456789",
+            "email": "fran@email.com"
+        }
+    },
+    {
+        "model": "UserWalletsApp.User",
+        "pk": 2,
+        "fields": {
+            "firstName": "Abe",
+            "lastName": "Simpson",
+            "alias": "abeSim",
+            "password": "123456789",
+            "email": "abe@simposon.com"
+        }
+    },
+    {
+      "model": "UserWalletsApp.Wallet",
+      "pk": 1,
+      "fields": {
+          "user_id": 1,
+          "balance": 700,
+          "currency_id": 1
+      }
+    },
+    {
+      "model": "UserWalletsApp.Wallet",
+      "pk": 2,
+      "fields": {
+          "user_id": 1,
+          "balance": 1000,
+          "currency_id": 2
+      }
+    },
+    {
+      "model": "UserWalletsApp.Wallet",
+      "pk": 3,
+      "fields": {
+          "user_id": 1,
+          "balance": 1000,
+          "currency_id": 3
+      }
+    },
+    {
+      "model": "UserWalletsApp.Wallet",
+      "pk": 4,
+      "fields": {
+          "user_id": 2,
+          "balance": 600,
+          "currency_id": 1
+      }
+    },
+    {
+      "model": "UserWalletsApp.Wallet",
+      "pk": 5,
+      "fields": {
+          "user_id": 2,
+          "balance": 2000,
+          "currency_id": 2
+      }
+    },
+    {
+      "model": "UserWalletsApp.Wallet",
+      "pk": 6,
+      "fields": {
+          "user_id": 2,
+          "balance": 0,
+          "currency_id": 3
+      }
+    },
+    {
+      "model": "UserWalletsApp.Transaction",
+      "pk": 1,
+      "fields": {
+          "wallet_id": 1,
+          "type": "deposit",
+          "amount": 200,
+          "status": "success"
+      }
+    },
+    {
+      "model": "UserWalletsApp.Transaction",
+      "pk": 2,
+      "fields": {
+          "wallet_id": 1,
+          "type": "deposit",
+          "amount": 500,
+          "status": "success"
+      }
+    },
+    {
+      "model": "UserWalletsApp.Transaction",
+      "pk": 3,
+      "fields": {
+          "wallet_id": 1,
+          "type": "deposit",
+          "amount": 1000,
+          "status": "success"
+      }
+    },
+    {
+      "model": "UserWalletsApp.Transaction",
+      "pk": 4,
+      "fields": {
+          "wallet_id": 2,
+          "type": "deposit",
+          "amount": 1000,
+          "status": "success"
+      }
+    },
+    {
+      "model": "UserWalletsApp.Transaction",
+      "pk": 5,
+      "fields": {
+          "wallet_id": 3,
+          "type": "deposit",
+          "amount": 1000,
+          "status": "success"
+      }
+    },
+    {
+      "model": "UserWalletsApp.Transaction",
+      "pk": 6,
+      "fields": {
+          "wallet_id": 1,
+          "type": "withdrawl",
+          "amount": 1000,
+          "status": "success"
+      }
+    },
+    {
+      "model": "UserWalletsApp.Transaction",
+      "pk": 7,
+      "fields": {
+          "wallet_id": 2,
+          "type": "withdrawl",
+          "amount": 100,
+          "status": "success"
+      }
+    },
+    {
+      "model": "UserWalletsApp.Transaction",
+      "pk": 8,
+      "fields": {
+          "wallet_id": 4,
+          "type": "withdrawl",
+          "amount": 2000,
+          "status": "success"
+      }
+    }
+]
